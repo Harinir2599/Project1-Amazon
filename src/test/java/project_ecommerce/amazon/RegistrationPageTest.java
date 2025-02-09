@@ -30,7 +30,8 @@ public class RegistrationPageTest {
 	    //WebElement w1 = driver.findElement(By.id("auth-pv-enter-code"));
 	    //boolean b1 = w1.isDisplayed();
 	    Assert.assertNotEquals(url1, url2);
-	    //Assert.assertEquals(b1, true);	    	    
+	    //Assert.assertEquals(b1, true);
+	    
 	    
 	    
 		

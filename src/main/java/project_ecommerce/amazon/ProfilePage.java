@@ -21,6 +21,20 @@ public class ProfilePage{
 	@FindBy(xpath="//button[@class='sc-fqkvVR sc-fTFjTM jZunJN eqmAHp']")
 	WebElement profile;
 	
+	@FindBy(xpath = "//div[text()='Preferred department']")
+	WebElement department;
+	
+	@FindBy(xpath = "//button[text()='Add']")
+	WebElement add_button;
+	
+	@FindBy(id="a-popover-content-1")
+	WebElement iframe;
+	
+	@FindBy(xpath = "//button[normalize-space()='Women']")
+	WebElement women_button;
+	
+	
+	
 	@FindBy(linkText="View")
 	WebElement view_link;
 	
@@ -40,6 +54,17 @@ public class ProfilePage{
 	public void account_profile() {
 		profile.click();
 	}
+	public void prefered_department() {
+		department.click();
+	}
+	public void add_button() {
+		add_button.click();
+	}
+	public void women_button(WebDriver driver) {
+		driver.switchTo().frame(iframe);
+		women_button.click();
+	}
+	
 	public void view() {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(view_link)).click();

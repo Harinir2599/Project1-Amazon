@@ -26,9 +26,12 @@ public class ProfilePageTest   {
 		p.account_list(driver);
 		p.account_profile();
 		p.view();
-		p.edit();
-		p.edit_profile_name();
-		p.continue_button();
+		/*
+		 * p.prefered_department(); p.add_button(); p.women_button(driver);
+		 */
+		  p.edit();
+		  p.edit_profile_name(); 
+		  p.continue_button();
 		WebElement w1 = driver.findElement(By.id("twotabsearchtextbox"));
 		boolean b1 = w1.isDisplayed();
 		Assert.assertEquals(b1, true);

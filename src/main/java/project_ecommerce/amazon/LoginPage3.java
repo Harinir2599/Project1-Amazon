@@ -24,12 +24,13 @@ public class LoginPage3 {
 	public static String[] excel_data() throws IOException {
 		FileInputStream f1 = new FileInputStream("C:\\Users\\1816775.INDIA\\eclipse-workspace\\amazon\\Excel\\LoginTestData.xlsx");
 		Workbook w1 = WorkbookFactory.create(f1);
-		long mob_number = (long) w1.getSheet("Sheet1").getRow(1).getCell(0).getNumericCellValue();
+		long mob_number = (long) w1.getSheet("Login").getRow(1).getCell(0).getNumericCellValue();
 		String username = NumberToTextConverter.toText(mob_number);
 		String password = w1.getSheet("Sheet1").getRow(1).getCell(1).getStringCellValue();
 		System.out.println("My number is "+username);
 		System.out.println("My password"+password);
-		return new String[]{username, password}; 
+		return new String[]{username, password};
+		
 	}
 	@FindBy(id="ap_email")
 	WebElement un;
@@ -58,8 +59,9 @@ public class LoginPage3 {
 	public void pass_submit() {
 		pass_button.click();
 	}
-	public LoginPage3(WebDriver driver) {
+	public LoginPage3(WebDriver driver) throws IOException {
 		PageFactory.initElements(driver, this);
+		 
 	}
 
 }

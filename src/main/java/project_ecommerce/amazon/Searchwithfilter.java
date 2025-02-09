@@ -12,27 +12,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Searchwithfilter {
 	WebDriver driver;
 	
-	@FindBy(xpath="//a[@aria-label='Apply the filter Get It by Tomorrow to narrow results']//i[@class='a-icon a-icon-checkbox']")
-	WebElement delivery_filter;
+	@FindBy(css="a[aria-label='Apply the filter Matrix to narrow results'] i[class='a-icon a-icon-checkbox']")
+	WebElement matrix_filter;
 	
-	@FindBy(xpath="//a[@aria-label='Apply the filter Fastrack to narrow results']/descendant::i")
+	@FindBy(xpath="//a[@aria-label='Apply the filter Titan to narrow results']//i[@class='a-icon a-icon-checkbox']")
 	WebElement brand_filter;
 	
 	@FindBy(xpath="//span[text()=\"Women's Watches\"]")
 	WebElement women_watch;
 	
-	public WebElement Fastrack_brand() {
+	public void Titan_brand() {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(brand_filter)).click();
-		return brand_filter;
+		//return brand_filter.isSelected();
 	}
 	
-	public WebElement  Deliverydate_Filter() {
+	public void  matrix_filter_brand() {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(delivery_filter)).click();
-		return delivery_filter;
+		wait.until(ExpectedConditions.elementToBeClickable(matrix_filter)).click();
+		//return matrix_filter.isSelected();
 		
 	}
+	
+	
 	public void Womens_Watch(){
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(women_watch)).click();
