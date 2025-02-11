@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Shopping_cart {
+public class T9_Shopping_cart {
 WebDriver driver;
 	
 	@FindBy(id="a-autoid-1-announce")
@@ -27,7 +27,7 @@ WebDriver driver;
 		item_cart.click();
 	}
 	
-	public Shopping_cart(WebDriver driver) {
+	public T9_Shopping_cart(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 }

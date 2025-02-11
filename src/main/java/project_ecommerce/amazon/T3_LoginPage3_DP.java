@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage3_DP {
+public class T3_LoginPage3_DP {
     WebDriver driver;
 
     @FindBy(id = "ap_email")
@@ -24,7 +24,7 @@ public class LoginPage3_DP {
     @FindBy(xpath = "//input[@class='a-button-input']")
     WebElement pass_button;
 
-    public LoginPage3_DP(WebDriver driver) {
+    public T3_LoginPage3_DP(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }

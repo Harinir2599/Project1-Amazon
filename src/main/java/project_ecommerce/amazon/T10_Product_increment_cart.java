@@ -9,17 +9,18 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Product_increment_cart {
+public class T10_Product_increment_cart {
 	WebDriver driver;
-	@FindBy(xpath="//div[@id='sc-active-e63006f0-0eb8-4a59-a7ef-565e9a34c091']//button[@aria-label='Increase quantity by one']")
+	@FindBy(css=".a-icon-small-add")
 	WebElement increment;
 	
-	@FindBy(xpath="//button[@aria-label='Decrease quantity by one']")
+	@FindBy(css="a-icon-small-remove")
 	WebElement decrement;
 	
 	public void increment() {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(increment)).click();
+		
 		
 	}
 	public void decrement() {
@@ -27,7 +28,7 @@ public class Product_increment_cart {
 		wait.until(ExpectedConditions.elementToBeClickable(decrement)).click();
 	}
 	
-	public Product_increment_cart(WebDriver driver) {
+	public T10_Product_increment_cart(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	

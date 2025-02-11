@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ProfilePage{
+public class T4_ProfilePage{
 	
     WebDriver driver;
 	
@@ -83,7 +83,7 @@ public class ProfilePage{
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.elementToBeClickable(continue_button)).click();
 	}
-	public ProfilePage(WebDriver driver) {
+	public T4_ProfilePage(WebDriver driver) {
 		
 		PageFactory.initElements(driver, this);
 		

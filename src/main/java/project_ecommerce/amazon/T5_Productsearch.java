@@ -10,15 +10,15 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class Productsearch {
+public class T5_Productsearch {
 	@FindBy(id="twotabsearchtextbox")
 	WebElement search;
 	
 	public void search_product() {
-		search.sendKeys("Watch"+Keys.ENTER);
+		search.sendKeys("LipStick"+Keys.ENTER);
 	}
 	
-	public Productsearch(WebDriver driver) {
+	public T5_Productsearch(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		
 	}

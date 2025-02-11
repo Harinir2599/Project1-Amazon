@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductDetailsPage {
+public class T7_ProductDetailsPage {
 	WebDriver driver;
 	@FindBy(xpath="(//a[@class=\"a-link-normal s-line-clamp-2 s-link-style a-text-normal\"])[1]")
 	WebElement product1;
@@ -39,6 +39,8 @@ public class ProductDetailsPage {
 		System.out.println("The child session id"+child);
 	}
 	public String product_details() {
+		String Product_text = "Fire-Boltt Phoenix Ultra Luxury Stainless Steel, Bluetooth Calling Smart Watch, AI Voice Assistant, Metal Body with 120+ Sports Modes, SpO2, Heart Rate Monitoring (Gold)";
+		
 		String product_details_watch = price.getText();
 		System.out.println("The product details of watch is "+product_details_watch);
 		return product_details_watch;
@@ -61,7 +63,7 @@ public class ProductDetailsPage {
 		String bc_detail = os.getText();
 		System.out.println("The battery_capacity of watch is "+bc_detail);
 	}
-	public ProductDetailsPage(WebDriver driver) {
+	public T7_ProductDetailsPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 

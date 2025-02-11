@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RegistrationPage {
+public class T1_RegistrationPage {
 	@FindBy(id="ap_customer_name")
 	WebElement your_name;
 	
@@ -32,7 +32,7 @@ public class RegistrationPage {
 		
 	}
 	
-	public RegistrationPage(WebDriver driver) {
+	public T1_RegistrationPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 

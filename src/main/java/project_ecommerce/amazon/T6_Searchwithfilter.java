@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Searchwithfilter {
+public class T6_Searchwithfilter {
 	WebDriver driver;
 	
 	@FindBy(css="a[aria-label='Apply the filter Matrix to narrow results'] i[class='a-icon a-icon-checkbox']")
@@ -41,7 +41,7 @@ public class Searchwithfilter {
 	}
 	
 	
-	public Searchwithfilter(WebDriver driver) {
+	public T6_Searchwithfilter(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	

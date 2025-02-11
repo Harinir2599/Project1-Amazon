@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-public class Sort_Product {
+public class T8_Sort_Product {
 	WebDriver driver;
 	@FindBy(id="s-result-sort-select")
 	WebElement sort;
@@ -18,7 +18,7 @@ public class Sort_Product {
 		
 		
 	}
-	public Sort_Product(WebDriver driver) {
+	public T8_Sort_Product(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
