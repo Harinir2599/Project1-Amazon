@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage3 {
+public class NW_LoginPage3 {
 	WebDriver driver;
 	
 	String username;
@@ -59,7 +59,7 @@ public class LoginPage3 {
 	public void pass_submit() {
 		pass_button.click();
 	}
-	public LoginPage3(WebDriver driver) throws IOException {
+	public NW_LoginPage3(WebDriver driver) throws IOException {
 		PageFactory.initElements(driver, this);
 		 
 	}
