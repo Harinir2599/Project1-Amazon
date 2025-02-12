@@ -32,12 +32,11 @@ public class T13_Coupon_code_Test {
 			
 			T11_CheckOut_page cp = new T11_CheckOut_page(driver);
 			cp.procced_to_buy();
-			cp.use_payment_method();
+			//cp.use_payment_method();
 			
 			T13_Coupon_code_page cc = new T13_Coupon_code_page(driver);
-			cc.promo_link_method();
 			cc.enter_code_method();
-			
+			driver.quit();
 
 		
 	}

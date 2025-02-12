@@ -35,7 +35,7 @@ public class T4_ProfilePageTest   {
 		WebElement w1 = driver.findElement(By.id("twotabsearchtextbox"));
 		boolean b1 = w1.isDisplayed();
 		Assert.assertEquals(b1, true);
-		
+		driver.quit();
 	}
 
 }

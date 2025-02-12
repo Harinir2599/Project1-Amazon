@@ -12,18 +12,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class T12_Payment_Method_Page {
 	WebDriver driver;
 	
-	@FindBy(id="pp-f4liOS-110")
+	@FindBy(xpath="//span[@class='pmts-instrument-selector']")
 	WebElement credit_rb;
 	
-	@FindBy(id="pp-f4liOS-116")
+	@FindBy(xpath="(//span[@role='radio'])[1]")
 	WebElement netbanking_rb;
 	
-	@FindBy(id="pp-f4liOS-136")
+	@FindBy(css=".a-radio")
 	WebElement UPI_rb;
 	
-	public void credit_rb_method() {
+	public void credit_rb_method() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(credit_rb)).click();
+		//return credit_rb.isSelected();
+		Thread.sleep(1000);
+		System.out.println(credit_rb.isSelected());
 		
 	}
 	public void netbanking_rb_method() {

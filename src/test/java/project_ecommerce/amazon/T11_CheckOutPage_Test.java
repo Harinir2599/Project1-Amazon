@@ -39,7 +39,7 @@ public class T11_CheckOutPage_Test {
 		boolean b1 = w1.isDisplayed();
 		Assert.assertEquals(b1, true);
 		
-		
+		driver.quit();
 	}
 
 }

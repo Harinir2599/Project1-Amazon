@@ -47,7 +47,7 @@ public class T3_LoginPage3_Dp_test {
         login.sign_continue();
         login.password(password);
         login.pass_submit();
-
+        driver.quit();
         
     }
 }

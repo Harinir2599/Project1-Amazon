@@ -35,7 +35,7 @@ public class T9_Shopping_cart_test {
 		String actualvalue = w1.getText();
 		String expectedvalue = "Shopping Cart";
 		Assert.assertEquals(actualvalue, expectedvalue);
-		
+		driver.quit();
 		
 	}
 

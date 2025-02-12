@@ -9,16 +9,9 @@ public class T13_Coupon_code_page {
 	
 	WebDriver driver;
 	
-	@FindBy(css="span[data-action='page-transit-no-update-action'] a[class='a-link-normal']")
-	WebElement promo_code_link;
-	
-	@FindBy(id="pp-f4liOS-107")
+	@FindBy(css=".a-input-text.a-form-normal.a-width-large.a-span9.pmts-claim-code")
 	WebElement enter_code;
 	
-	public void promo_link_method() {
-		promo_code_link.click();
-		
-	}
 	public void enter_code_method() {
 		enter_code.sendKeys("ABCDE");
 		

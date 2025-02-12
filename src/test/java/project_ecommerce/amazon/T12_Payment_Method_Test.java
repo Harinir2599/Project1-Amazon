@@ -4,12 +4,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class T12_Payment_Method_Test {
 	WebDriver driver;
 	@Test
-	public void testcase() {
+	public void testcase() throws InterruptedException {
 		
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
@@ -35,6 +36,8 @@ public class T12_Payment_Method_Test {
 		pm.credit_rb_method();
 		pm.netbanking_rb_method();
 		pm.UPI_rb();
+		driver.quit();
+		
 		
 	}
 

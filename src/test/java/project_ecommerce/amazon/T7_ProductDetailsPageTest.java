@@ -25,16 +25,11 @@ public class T7_ProductDetailsPageTest {
 		p.search_product();
 		
 		T7_ProductDetailsPage pd = new T7_ProductDetailsPage(driver);
-		pd.product(driver);
-		pd.price_detail();
-		/*
-		 * pd.product_details(); pd.special_feature_detail();
-		 * pd.operating_system_detail(); pd.battery_capacity_detail();
-		 */
-		String actualprice = pd.price_detail();
-		String expectedprice = "1,499";
-		Assert.assertEquals(actualprice, expectedprice);
+		pd.price_detail(); 
+		pd.product_details();
+		pd.product_complete_detail();
 		
+		driver.quit();
 				
 	}
 

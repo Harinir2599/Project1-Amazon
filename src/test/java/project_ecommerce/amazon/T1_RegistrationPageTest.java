@@ -13,7 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class T1_RegistrationPageTest {
 	@Test
-	public void testcase() {
+	public void testcase() throws InterruptedException {
 		
 		WebDriver driver = new ChromeDriver();
 	    driver.manage().window().maximize();
@@ -31,7 +31,7 @@ public class T1_RegistrationPageTest {
 	    //boolean b1 = w1.isDisplayed();
 	    Assert.assertNotEquals(url1, url2);
 	    //Assert.assertEquals(b1, true);
-	    
+	    driver.quit();
 	    
 	    
 		

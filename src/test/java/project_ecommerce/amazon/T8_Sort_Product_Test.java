@@ -25,7 +25,7 @@ public class T8_Sort_Product_Test {
 		
 		T8_Sort_Product s = new T8_Sort_Product(driver);
 		s.sort();
-		
+		driver.quit();
 	}
 
 }

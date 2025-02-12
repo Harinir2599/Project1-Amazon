@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-     <!-- <class name="project_ecommerce.amazon.RegistrationPageTest"/> -->
-      <class name="project_ecommerce.amazon.LoginPageTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+		<classes>
+
+			<class name="project_ecommerce.amazon.T1_RegistrationPageTest" />
+			<class name="project_ecommerce.amazon.T2_LoginPageTest2" />
+			<class name="project_ecommerce.amazon.T3_LoginPage3_Dp_test" />
+			<class name="project_ecommerce.amazon.T4_ProfilePageTest" />
+			<class name="project_ecommerce.amazon.T5_ProductsearchTest" />
+			<class name="project_ecommerce.amazon.T6_SearchwithfilterTest" />
+			<class name="project_ecommerce.amazon.T7_ProductDetailsPageTest" />
+			<class name="project_ecommerce.amazon.T8_Sort_Product_Test" />
+			<class name="project_ecommerce.amazon.T9_Shopping_cart_test" />
+			<class name="project_ecommerce.amazon.T10_Product_increment_Test" />
+			<class name="project_ecommerce.amazon.T11_CheckOutPage_Test" />
+			<class name="project_ecommerce.amazon.T12_Payment_Method_Test" />
+			<class name="project_ecommerce.amazon.T13_Coupon_code_Test" />
+			<class name="project_ecommerce.amazon.T15_CartPage_without_LoginTest" />
+			
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

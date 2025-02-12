@@ -14,7 +14,7 @@ public class T10_Product_increment_cart {
 	@FindBy(css=".a-icon-small-add")
 	WebElement increment;
 	
-	@FindBy(css="a-icon-small-remove")
+	@FindBy(css="button[aria-label='Decrease quantity by one']")
 	WebElement decrement;
 	
 	public void increment() {
@@ -24,7 +24,7 @@ public class T10_Product_increment_cart {
 		
 	}
 	public void decrement() {
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(decrement)).click();
 	}
 	

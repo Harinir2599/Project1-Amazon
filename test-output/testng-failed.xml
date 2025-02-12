@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="project_ecommerce.amazon.Payment_Method_Test">
+      <class name="project_ecommerce.amazon.T5_ProductsearchTest">
         <methods>
+          <include name="logout"/>
+          <include name="amazon_link"/>
           <include name="testcase"/>
         </methods>
-      </class> <!-- project_ecommerce.amazon.Payment_Method_Test -->
+      </class> <!-- project_ecommerce.amazon.T5_ProductsearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

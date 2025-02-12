@@ -45,7 +45,7 @@ public class T6_SearchwithfilterTest {
 		 * = s.Titan_brand(); Assert.assertEquals(b2, true);
 		 */
 		 
-		
+		driver.quit();
 		
 		
 		
